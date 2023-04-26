@@ -37,8 +37,8 @@ X_train0 = training_data['article']
 y_train0 = training_data['highlights']
 X_test0 = test_data['article']
 y_test0 = test_data['highlights']
-length_train0 = int(len(X_train0) * 0.001) #if the percent is 0.01, take 10 minutes or more
-length_test0 = int(len(X_test0) * 0.01)
+length_train0 = int(len(X_train0) * 1)
+length_test0 = int(len(X_test0) * 0.1)
 
 X_train = X_train0[0:length_train0 - 1]
 y_train = y_train0[0:length_train0 - 1]
